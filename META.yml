@@ -1,0 +1,16 @@
+--- #YAML:1.0
+name: CGI-Application-Plugin-Config-Simple
+version: 0.03
+author:
+  - Michael Peters <michael@petersfamily.org>
+abstract: ~
+license: perl
+requires:
+  CGI::Application: 3.21
+  Config::Simple: 0
+  Exporter: 0
+provides:
+  CGI::Application::Plugin::Config::Simple:
+    file: lib/CGI/Application/Plugin/Config/Simple.pm
+    version: 0.03
+generated_by: Module::Build version 0.25
