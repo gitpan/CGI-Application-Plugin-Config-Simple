@@ -5,7 +5,7 @@ use base 'Exporter';
 use CGI::Application;
 use Config::Simple;
 
-$CGI::Application::Plugin::Config::Simple::VERSION = 0.04;
+$CGI::Application::Plugin::Config::Simple::VERSION = '1.00';
 use vars '@EXPORT';
 @EXPORT = qw(config_file config_param config);
 
@@ -182,7 +182,7 @@ return the name of the current config file.
 sub config_file {
     my ($self, $file_name) = @_;
     #if we have a file name to set
-    if($file_name) {
+    if(defined $file_name) {
         $self->{__CONFIG_SIMPLE}->{__FILE_NAME} = $file_name;
         $self->{__CONFIG_SIMPLE}->{__FILE_CHANGED} = 1;
     } else { 
@@ -212,7 +212,9 @@ never actually happen.
 
 =head1 AUTHOR 
 
-Michael Peters <michael@petersfamily.org>
+Michael Peters <mpeters@plusthree.com>
+
+Thanks to Plus Three, LP (http://www.plusthree.com) for sponsoring my work on this module
 
 =head1 SEE ALSO
 

@@ -8,3 +8,4 @@ README
 t/main.t
 t/test.conf
 t/test.ini
+t/test_unwriteable.ini

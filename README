@@ -128,7 +128,10 @@ CAVEATS
     practice this should never actually happen.
 
 AUTHOR
-    Michael Peters <michael@petersfamily.org>
+    Michael Peters <mpeters@plusthree.com>
+
+    Thanks to Plus Three, LP (http://www.plusthree.com) for sponsoring my
+    work on this module
 
 SEE ALSO
     * CGI::Application

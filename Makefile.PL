@@ -2,14 +2,15 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
+          'PL_FILES' => {},
+          'INSTALLDIRS' => 'site',
           'NAME' => 'CGI::Application::Plugin::Config::Simple',
           'VERSION_FROM' => 'lib/CGI/Application/Plugin/Config/Simple.pm',
           'PREREQ_PM' => {
+                           'Test::More' => 0,
+                           'Config::Simple' => 0,
                            'CGI::Application' => '3.21',
-                           'Config::Simple' => '0',
-                           'Exporter' => '0'
-                         },
-          'INSTALLDIRS' => 'site',
-          'PL_FILES' => {}
+                           'Exporter' => 0
+                         }
         )
 ;
