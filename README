@@ -1,4 +1,7 @@
-NAME - CGI::Application::Plugin::Config::Simple - Add Config::Simple support to CGI::Application
+NAME
+    CGI::Application::Plugin::Config::Simple - Add Config::Simple support to
+    CGI::Application
+
 SYNOPSIS
     in your CGI::Application based module
 

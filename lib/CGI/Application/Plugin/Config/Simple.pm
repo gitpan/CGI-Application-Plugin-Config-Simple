@@ -5,12 +5,15 @@ use base 'Exporter';
 use CGI::Application;
 use Config::Simple;
 
-$CGI::Application::Plugin::Config::Simple::VERSION = 0.03;
-our @EXPORT = qw(config_file config_param config);
+$CGI::Application::Plugin::Config::Simple::VERSION = 0.04;
+use vars '@EXPORT';
+@EXPORT = qw(config_file config_param config);
 
 =pod
 
-=head1 NAME - CGI::Application::Plugin::Config::Simple - Add Config::Simple support to CGI::Application
+=head1 NAME 
+
+CGI::Application::Plugin::Config::Simple - Add Config::Simple support to CGI::Application
 
 =head1 SYNOPSIS
 

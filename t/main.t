@@ -5,7 +5,6 @@ use strict;
 
 
 #test that we have the modules we need
-require_ok('CGI::Application::Plugin');
 require_ok('CGI::Application::Plugin::Config::Simple');
 #create an empty hash to represent a C::A::P::C::S object
 my $self = bless {}, 'CGI::Application::Plugin::Config::Simple';
