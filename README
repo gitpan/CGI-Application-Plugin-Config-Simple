@@ -56,6 +56,7 @@ DESCRIPTION
 
 METHODS
   config_param()
+
     This method acts as an accessor/mutator for configuration variables
     coming from the configuration file.
 
@@ -84,6 +85,7 @@ METHODS
     before calling this method or it will 'die'.
 
   config()
+
     This method will return the underlying Config::Simple object for more
     direct use by your application. You must set the name of the
     configuration file either using the config_file() method or the
@@ -93,6 +95,7 @@ METHODS
             my $conf = $self->config();
                                                                                                                                              
   config_file([$file_name])
+
     This method acts as an accessor/mutator to either get the name of the
     current config file or to change/initialize it. This method must be
     called to initialize the name of the config file before any call can be
@@ -136,7 +139,6 @@ AUTHOR
 SEE ALSO
     * CGI::Application
     * Config::Simple
-
 LICENSE
     This library is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.

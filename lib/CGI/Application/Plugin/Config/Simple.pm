@@ -5,7 +5,7 @@ use base 'Exporter';
 use CGI::Application;
 use Config::Simple;
 
-$CGI::Application::Plugin::Config::Simple::VERSION = '1.00';
+$CGI::Application::Plugin::Config::Simple::VERSION = '1.01';
 use vars '@EXPORT';
 @EXPORT = qw(config_file config_param config);
 

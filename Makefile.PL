@@ -5,7 +5,9 @@ WriteMakefile
           'PL_FILES' => {},
           'INSTALLDIRS' => 'site',
           'NAME' => 'CGI::Application::Plugin::Config::Simple',
+          'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/CGI/Application/Plugin/Config/Simple.pm',
+          'PM' => undef,
           'PREREQ_PM' => {
                            'Test::More' => 0,
                            'Config::Simple' => 0,

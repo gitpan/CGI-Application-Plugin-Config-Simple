@@ -65,11 +65,15 @@ my $self = bless {}, 'CGI::Application::Plugin::Config::Simple';
 
 # 17..20
 # lets cause some errors
-{
-    # un readable file
+SKIP: {
+    # try to change it's permissions
     my $new_file = 't/test_unwriteable.ini';
-    chmod(0000, $new_file)
-        || die "Could not chmod $new_file! $!";
+    chmod(0000, $new_file) || die "Could not chmod $new_file! $!";
+    # skip these tests if we can still read the file
+    # cause we're probably running as root
+    skip('user wont have permission issues', 4) if( -r $new_file );
+
+    # un readable file
     $self->config_file($new_file);
     eval { $self->config_param('param1') };
     like($@, qr/Permission denied/i, 'un readable file');
